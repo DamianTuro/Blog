@@ -20,15 +20,23 @@
 
                 <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
                     Super Blog
-                    
+
                     <p:menu> 
                         <p:menuitem value="Zaloguj" url="faces/Logowanie.xhtml" />
                     </p:menu>
-                    
+
                 </p:layoutUnit>
 
                 <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
-                    Footer
+                    <h:form>
+                        <h3 style="margin-top:0">Client</h3>
+                        <p:clock />
+
+                        <h3>Server</h3>
+                        <p:clock pattern="HH:mm:ss dd.MM.yyyy" mode="server" />
+
+
+                    </h:form>
                 </p:layoutUnit>
 
                 <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
@@ -43,8 +51,8 @@
                 </p:layoutUnit>
 
                 <p:layoutUnit position="center">
-                        
-                   
+
+
                 </p:layoutUnit>
 
             </p:layout>
