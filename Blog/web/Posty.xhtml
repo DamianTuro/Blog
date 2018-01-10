@@ -43,7 +43,59 @@
                 </p:layoutUnit>
 
                 <p:layoutUnit position="center">
-                    Welcome to PrimeFaces
+                     <h:form>
+                        <p:growl id="msgs" showDetail="true" />
+                        <p:fieldset legend="Post 1" toggleable="true" toggleSpeed="500">
+                             <p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" update="msgs" />
+                                  <h:panelGrid columns="2" cellpadding="5">
+                                        
+                                           <h:outputText value="Francis Ford Coppola's legendary continuation and sequel to his landmark 1972 film, The_Godfather,
+                                                         parallels the young Vito Corleone's rise with his son Michael's spiritual fall, deepening The_Godfather's depiction of 
+                                                         the dark side of the American dream.
+                                                         In the early 1900s, the child Vito flees his Sicilian village for America after the local Mafia kills his family. 
+                                                         Vito struggles to make a living, legally or illegally, for his wife and growing brood in Little Italy,
+                                                         killing the local Black Hand Fanucci after he demands his customary cut of the tyro's business. With Fanucci gone,
+                                                         Vito's communal stature grows."></h:outputText>
+                                    </h:panelGrid>
+                        </p:fieldset>
+                        
+                         <p:fieldset legend="Post 2" toggleable="true" toggleSpeed="500">
+                             <p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" update="msgs" />
+                                  <h:panelGrid columns="2" cellpadding="5">
+                                        
+                                           <h:outputText value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "></h:outputText>
+                                    </h:panelGrid>
+                        </p:fieldset>
+                        
+                         <p:fieldset legend="Post 3" toggleable="true" toggleSpeed="500">
+                             <p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" update="msgs" />
+                                  <h:panelGrid columns="2" cellpadding="5">
+                                        
+                                           <h:outputText value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "></h:outputText>
+                                            <h:outputText value="Komentarz nr 1"></h:outputText>
+                                    </h:panelGrid>
+                        </p:fieldset>
+                        
+                         <p:fieldset legend="Post 4" toggleable="true" toggleSpeed="500">
+                             <p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" update="msgs" />
+                                  <h:panelGrid columns="2" cellpadding="5">
+                                        
+                                           <h:outputText value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "></h:outputText>
+                                    </h:panelGrid>
+                        </p:fieldset>
+                        
+                         <p:fieldset legend="Post 5" toggleable="true" toggleSpeed="500">
+                             <p:ajax event="toggle" listener="#{fieldsetView.handleToggle}" update="msgs" />
+                                  <h:panelGrid columns="2" cellpadding="5">
+                                        
+                                           <h:outputText value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "></h:outputText>
+                                    </h:panelGrid>
+                        </p:fieldset>
+                    </h:form>
                 </p:layoutUnit>
 
             </p:layout>

@@ -21,9 +21,22 @@
                 <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
                     Super Blog
                     
-                    <p:menu> 
-                        <p:menuitem value="Zaloguj" url="faces/Logowanie.xhtml" />
-                    </p:menu>
+                      
+                  <h:form>     
+    <p:growl id="messages" showDetail="true" />
+ 
+    <p:toolbar>
+        <f:facet name="right">
+            <p:menuButton value="Konto">
+                <p:menuitem value="Zaloguj" actionListener="#{toolbarView.save}" update="messages" icon="ui-icon-arrowrefresh-1-w" /> 
+            </p:menuButton>
+        </f:facet>
+    </p:toolbar>
+</h:form>
+    
+                         
+                    
+                  
                     
                 </p:layoutUnit>
 
